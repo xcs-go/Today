@@ -62,7 +62,6 @@
        array = [TodayDateModel mj_objectArrayWithKeyValuesArray:modelArray];
         
 //        遍历数组
-//        }
         NSMutableArray *tModelArray = [NSMutableArray array];
         for (TodayDateModel *model in array) {
 //            NSLog(@"model----%@",model);
