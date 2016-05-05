@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F960C961CDB9FC800C2B049 /* TodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F960C941CDB9FC800C2B049 /* TodayTableViewCell.m */; };
+		1F960C971CDB9FC800C2B049 /* TodayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F960C951CDB9FC800C2B049 /* TodayTableViewCell.xib */; };
 		1FB0B04C1CDA0559008DC6C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0B04B1CDA0559008DC6C6 /* main.m */; };
 		1FB0B04F1CDA0559008DC6C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0B04E1CDA0559008DC6C6 /* AppDelegate.m */; };
 		1FB0B0571CDA0559008DC6C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0B0561CDA0559008DC6C6 /* Images.xcassets */; };
@@ -65,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F960C931CDB9FC800C2B049 /* TodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayTableViewCell.h; sourceTree = "<group>"; };
+		1F960C941CDB9FC800C2B049 /* TodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayTableViewCell.m; sourceTree = "<group>"; };
+		1F960C951CDB9FC800C2B049 /* TodayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayTableViewCell.xib; sourceTree = "<group>"; };
 		1FB0B0461CDA0559008DC6C6 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB0B04A1CDA0559008DC6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB0B04B1CDA0559008DC6C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -205,6 +210,9 @@
 				1FB0B0781CDA202D008DC6C6 /* AFNetworking */,
 				1FB0B06F1CDA0BD7008DC6C6 /* ViewController.h */,
 				1FB0B0701CDA0BD7008DC6C6 /* ViewController.m */,
+				1F960C931CDB9FC800C2B049 /* TodayTableViewCell.h */,
+				1F960C941CDB9FC800C2B049 /* TodayTableViewCell.m */,
+				1F960C951CDB9FC800C2B049 /* TodayTableViewCell.xib */,
 				1FB0B0971CDA2A88008DC6C6 /* TodayDateModel.h */,
 				1FB0B0981CDA2A88008DC6C6 /* TodayDateModel.m */,
 				1FB0B04D1CDA0559008DC6C6 /* AppDelegate.h */,
@@ -423,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB0B0571CDA0559008DC6C6 /* Images.xcassets in Resources */,
+				1F960C971CDB9FC800C2B049 /* TodayTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +484,7 @@
 				1FB0B0B81CDA2CA7008DC6C6 /* NSObject+MJClass.m in Sources */,
 				1FBE2E7F1CDA52AB0040E3D5 /* UIImageView+WebCache.m in Sources */,
 				1FBE2E761CDA52AB0040E3D5 /* SDWebImageDownloader.m in Sources */,
+				1F960C961CDB9FC800C2B049 /* TodayTableViewCell.m in Sources */,
 				1FB0B04C1CDA0559008DC6C6 /* main.m in Sources */,
 				1FBE2E711CDA52AB0040E3D5 /* MKAnnotationView+WebCache.m in Sources */,
 				1FB0B08E1CDA202D008DC6C6 /* AFHTTPSessionManager.m in Sources */,

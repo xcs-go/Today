@@ -12,7 +12,7 @@
 
 @property(nonatomic, assign)int ID;
 /**
- *  图像
+ *  图像地址
  */
 @property(nonatomic, copy)NSString *pic;
 

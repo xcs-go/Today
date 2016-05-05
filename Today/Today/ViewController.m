@@ -12,7 +12,7 @@
 #import "MJExtension.h"
 #import "TodayDateModel.h"
 #import "UIImageView+WebCache.h"
-
+#import "TodayTableViewCell.h"
 
 @interface ViewController ()
 
@@ -92,21 +92,30 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    TodayTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [TodayTableViewCell tableViewCell];
     }
     
 //    取出数据模型
     TodayDateModel *model = self.todayModelArray[indexPath.row];
-    NSURL *url = [NSURL URLWithString:model.pic];
-    [cell.imageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"iTunesArtwork"]];
-    cell.textLabel.text = model.des;
+    
+//    传递数据模型
+    cell.model = model;
+//    NSURL *url = [NSURL URLWithString:model.pic];
+//    [cell.imageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"iTunesArtwork"]];
+//    cell.textLabel.text = model.des;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    取出数据模型
+    TodayDateModel *model = self.todayModelArray[indexPath.row];
+    
+//    传递数据模型
+    
+    
     TodayController *vc = [[TodayController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }

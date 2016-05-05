@@ -10,6 +10,17 @@
 
 @interface TodayController ()
 
+/**
+ *  显示图片
+ */
+@property(nonatomic, weak)UIImageView * ImageView;
+
+/**
+ *  显示描述内容
+ */
+@property(nonatomic, weak)UILabel * text;
+
+
 @end
 
 @implementation TodayController
@@ -17,7 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+//    self.view.backgroundColor = [UIColor redColor];
+}
+
+- (void)setModel:(TodayDateModel *)model{
+    _model = model;
 }
 
 - (void)didReceiveMemoryWarning {

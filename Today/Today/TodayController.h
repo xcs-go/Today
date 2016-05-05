@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TodayDateModel;
 
 @interface TodayController : UIViewController
+
+/**
+ *  被选中的那一行的数据模型
+ */
+@property(nonatomic, strong)TodayDateModel* model;
 
 @end
