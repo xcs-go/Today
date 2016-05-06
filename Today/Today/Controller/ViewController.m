@@ -13,6 +13,7 @@
 #import "TodayDateModel.h"
 #import "UIImageView+WebCache.h"
 #import "TodayTableViewCell.h"
+#import "TodayModelF.h"
 
 @interface ViewController ()
 
@@ -114,9 +115,12 @@
     TodayDateModel *model = self.todayModelArray[indexPath.row];
     
 //    传递数据模型
+    TodayModelF *modelF = [[TodayModelF alloc] init];
+    modelF.modelF = model;
     
-    
+//    push出新的控制器
     TodayController *vc = [[TodayController alloc] init];
+    vc.model = modelF;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

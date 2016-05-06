@@ -7,6 +7,11 @@
 //
 
 #import "TodayController.h"
+#import "TodayDateModel.h"
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "TodayModelF.h"
+
 
 @interface TodayController ()
 
@@ -28,10 +33,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.view.backgroundColor = [UIColor redColor];
-}
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+//    设置相关的属性
+    UIImageView *imageView = [[UIImageView alloc] init];
+    [self.view addSubview:imageView];
+    self.ImageView = imageView;
+    
+    
+    UILabel *label = [[UILabel alloc] init];
+//    label.backgroundColor = [UIColor redColor];
+    label.numberOfLines = 0;
+    [self.view addSubview:label];
+    self.text = label;
+    
+    
+    
+    //    设置尺寸和内容
+    self.ImageView.frame = self.model.ImageViewF;
+    NSURL *ImageUrl = [NSURL URLWithString:self.model.modelF.pic];
+    [self.ImageView sd_setImageWithURL:ImageUrl placeholderImage:[UIImage imageNamed:@"iTunesArtwork"]];
+    
+    self.text.frame = self.model.desF;
+    self.text.text = self.model.modelF.des;
+    }
 
-- (void)setModel:(TodayDateModel *)model{
+- (void)setModel:(TodayModelF *)model{
     _model = model;
 }
 

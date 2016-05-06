@@ -11,6 +11,7 @@
 @interface TodayDateModel : NSObject
 
 @property(nonatomic, assign)int ID;
+
 /**
  *  图像地址
  */
